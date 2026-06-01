@@ -1,13 +1,13 @@
 # Rust Coding Questions
 
 A collection of coding problems solved in Rust, aimed at **SREs, platform, and
-production engineers** — not just classic LeetCode practice.
+production engineers**, not just classic LeetCode practice.
 
 The focus is on the data structures and patterns that show up in real
 infrastructure work: caches, rate limiters, queues, schedulers, retry/backoff
 logic, and the kind of systems-flavored problems you hit when building and
 operating production services. Each solution is written with unit tests so the
-behavior — and the edge cases that matter in production — is pinned down.
+behavior, and the edge cases that matter in production, is pinned down.
 
 ## Layout
 
@@ -15,7 +15,7 @@ behavior — and the edge cases that matter in production — is pinned down.
 rust-coding-questions/
 ├── Cargo.toml          # package manifest (edition 2021)
 └── src/
-    ├── lib.rs          # crate root — one `mod <name>;` per question
+    ├── lib.rs          # crate root, one `mod <name>;` per question
     └── lru_cache.rs    # LRU cache implementation + tests
 ```
 
@@ -41,4 +41,4 @@ cargo test
    mod rate_limiter;
    ```
 
-3. Run `cargo test` — the new tests are picked up automatically.
+3. Run `cargo test`, the new tests are picked up automatically.
