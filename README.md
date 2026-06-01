@@ -33,12 +33,12 @@ cargo test
 
 ## Adding a new question
 
-1. Create a new file in `src/`, e.g. `src/two_sum.rs`, with the solution and a
+1. Create a new file in `src/`, e.g. `src/rate_limiter.rs`, with the solution and a
    `#[cfg(test)]` module.
 2. Add one line to `src/lib.rs`:
 
    ```rust
-   mod two_sum;
+   mod rate_limiter;
    ```
 
 3. Run `cargo test` — the new tests are picked up automatically.
