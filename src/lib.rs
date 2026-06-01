@@ -4,3 +4,4 @@
 
 // One module per coding question. Add a new `mod <name>;` line as you add files.
 mod lru_cache;
+mod rate_limiter;

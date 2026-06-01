@@ -13,17 +13,19 @@ behavior, and the edge cases that matter in production, is pinned down.
 
 ```
 rust-coding-questions/
-├── Cargo.toml          # package manifest (edition 2021)
+├── Cargo.toml            # package manifest (edition 2021)
 └── src/
-    ├── lib.rs          # crate root, one `mod <name>;` per question
-    └── lru_cache.rs    # LRU cache implementation + tests
+    ├── lib.rs            # crate root, one `mod <name>;` per question
+    ├── lru_cache.rs      # LRU cache implementation + tests
+    └── rate_limiter.rs   # sliding-window rate limiter + tests
 ```
 
 ## Solutions
 
-| Problem   | File                | Notes                                                        |
-| --------- | ------------------- | ------------------------------------------------------------ |
-| LRU Cache | `src/lru_cache.rs`  | `O(1)` get/put using a `HashMap` + `BTreeMap` clock ordering |
+| Problem      | File                  | Notes                                                            |
+| ------------ | --------------------- | ---------------------------------------------------------------- |
+| LRU Cache    | `src/lru_cache.rs`    | `O(1)` get/put using a `HashMap` + `BTreeMap` clock ordering     |
+| Rate Limiter | `src/rate_limiter.rs` | Sliding-window limiter using a `VecDeque` of request timestamps  |
 
 ## Running the tests
 
