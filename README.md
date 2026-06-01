@@ -1,7 +1,13 @@
 # Rust Coding Questions
 
-A collection of classic data-structure and algorithm problems solved in Rust,
-written LeetCode-style with unit tests for each solution.
+A collection of coding problems solved in Rust, aimed at **SREs, platform, and
+production engineers** — not just classic LeetCode practice.
+
+The focus is on the data structures and patterns that show up in real
+infrastructure work: caches, rate limiters, queues, schedulers, retry/backoff
+logic, and the kind of systems-flavored problems you hit when building and
+operating production services. Each solution is written with unit tests so the
+behavior — and the edge cases that matter in production — is pinned down.
 
 ## Layout
 
