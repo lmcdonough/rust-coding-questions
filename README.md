@@ -17,15 +17,17 @@ rust-coding-questions/
 └── src/
     ├── lib.rs            # crate root, one `mod <name>;` per question
     ├── lru_cache.rs      # LRU cache implementation + tests
-    └── rate_limiter.rs   # sliding-window rate limiter + tests
+    ├── rate_limiter.rs   # sliding-window rate limiter + tests
+    └── parse_log_file.rs # log token frequency counter + tests
 ```
 
 ## Solutions
 
 | Problem      | File                  | Notes                                                            |
 | ------------ | --------------------- | ---------------------------------------------------------------- |
-| LRU Cache    | `src/lru_cache.rs`    | `O(1)` get/put using a `HashMap` + `BTreeMap` clock ordering     |
-| Rate Limiter | `src/rate_limiter.rs` | Sliding-window limiter using a `VecDeque` of request timestamps  |
+| LRU Cache    | `src/lru_cache.rs`     | `O(1)` get/put using a `HashMap` + `BTreeMap` clock ordering     |
+| Rate Limiter | `src/rate_limiter.rs`  | Sliding-window limiter using a `VecDeque` of request timestamps  |
+| Parse Log File | `src/parse_log_file.rs` | Token frequency counter with `top_n`, ties broken alphabetically |
 
 ## Running the tests
 
