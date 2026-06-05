@@ -16,10 +16,11 @@ rust-coding-questions/
 ├── Cargo.toml            # package manifest (edition 2021)
 └── src/
     ├── lib.rs            # crate root, one `mod <name>;` per question
-    ├── lru_cache.rs             # LRU cache implementation + tests
-    ├── rate_limiter.rs          # sliding-window rate limiter + tests
-    ├── parse_log_file.rs        # log token frequency counter + tests
-    └── streaming_file_reader.rs # tail-style streaming file reader + tests
+    ├── lru_cache.rs                  # LRU cache implementation + tests
+    ├── rate_limiter.rs               # sliding-window rate limiter + tests
+    ├── parse_log_file.rs             # log token frequency counter + tests
+    ├── streaming_file_reader.rs      # tail-style streaming file reader + tests
+    └── rolling_window_aggregator.rs  # rolling-window avg/min/max aggregator + tests
 ```
 
 ## Solutions
@@ -30,6 +31,7 @@ rust-coding-questions/
 | Rate Limiter | `src/rate_limiter.rs`  | Sliding-window limiter using a `VecDeque` of request timestamps  |
 | Parse Log File | `src/parse_log_file.rs` | Token frequency counter with `top_n`, ties broken alphabetically |
 | Streaming File Reader | `src/streaming_file_reader.rs` | `tail -f`-style reader using `BufReader` + `Seek` to track new lines |
+| Rolling Window Aggregator | `src/rolling_window_aggregator.rs` | Sliding-window avg/min/max over timestamped `f64` values using a `VecDeque` |
 
 ## Running the tests
 

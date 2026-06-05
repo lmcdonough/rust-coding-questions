@@ -7,3 +7,4 @@ mod lru_cache;
 mod rate_limiter;
 mod parse_log_file;
 mod streaming_file_reader;
+mod rolling_window_aggregator;
