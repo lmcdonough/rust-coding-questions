@@ -8,3 +8,4 @@ mod rate_limiter;
 mod parse_log_file;
 mod streaming_file_reader;
 mod rolling_window_aggregator;
+mod in_mem_kv_store;

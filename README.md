@@ -20,7 +20,8 @@ rust-coding-questions/
     ├── rate_limiter.rs               # sliding-window rate limiter + tests
     ├── parse_log_file.rs             # log token frequency counter + tests
     ├── streaming_file_reader.rs      # tail-style streaming file reader + tests
-    └── rolling_window_aggregator.rs  # rolling-window avg/min/max aggregator + tests
+    ├── rolling_window_aggregator.rs  # rolling-window avg/min/max aggregator + tests
+    └── in_mem_kv_store.rs            # in-memory key-value store with optional TTL + tests
 ```
 
 ## Solutions
@@ -32,6 +33,7 @@ rust-coding-questions/
 | Parse Log File | `src/parse_log_file.rs` | Token frequency counter with `top_n`, ties broken alphabetically |
 | Streaming File Reader | `src/streaming_file_reader.rs` | `tail -f`-style reader using `BufReader` + `Seek` to track new lines |
 | Rolling Window Aggregator | `src/rolling_window_aggregator.rs` | Sliding-window avg/min/max over timestamped `f64` values using a `VecDeque` |
+| In-Memory KV Store | `src/in_mem_kv_store.rs` | `HashMap`-backed store with optional per-key TTL, expiry checked on read, and bulk purge |
 
 ## Running the tests
 
